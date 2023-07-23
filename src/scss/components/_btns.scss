@@ -1,0 +1,31 @@
+.btn{
+  cursor: pointer;
+  display: inline-block;
+  font-size: remCalc(25);
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  -webkit-appearance: button;
+  padding: 15px 73px 18px;
+  border-radius: 37px;
+  border: 1px solid;
+
+  &-primary{
+    background-color: black;
+    border-color: black;
+    color: white;
+
+    &:hover, &:active{
+      background-color: rgb(76, 76, 76);
+    }
+  }
+}
+
+@media(min-width: 575px){
+  .btn{
+    font-size: remCalc(20);
+    padding: 13px 73px 14px;
+  }
+}

@@ -1,0 +1,90 @@
+.form-area{
+  border-radius: 15px;
+  background-color: $grey-bg;
+  padding: 46px 20px 0;
+}
+
+.form-control{
+  display: block;
+  width: 100%;
+  padding: .53rem 15px .55rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $grey;
+  background-color: $grey-bg-2;
+  background-clip: padding-box;
+  border: 1px solid $grey-border;
+  appearance: none;
+  border-radius: 5px;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+  &::placeholder{
+    opacity: 1;
+  }
+}
+
+.form-text{
+  text-align: right;
+  font-size: remCalc(16);
+  margin-top: 3px;
+}
+
+.form-check{
+  min-height: 1.5rem;
+  padding-left: 17px;
+  display: inline-flex;
+  align-items: center;
+}
+
+input.form-check-input{
+  border-radius: 5px;
+  float: left;
+  margin: 0 7px 0 -17px;
+  width: 26px;
+  height: 25px;
+  border: 1px solid $grey-border;
+  background-color: $grey-bg-2;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-print-color-adjust: exact;
+  color-adjust: exact;
+  print-color-adjust: exact;
+
+  &:checked{
+    background-color: $green-light;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
+    background-size: 80% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.form-check-label{
+  font-size: remCalc(16);
+}
+
+@media(min-width: 575px){
+  .form-area{
+    padding: 46px 33px;
+  }
+
+  .form-control{
+    padding: .33rem 15px .36rem;
+  }
+
+  .form-text{
+    font-size: remCalc(14);
+  }
+
+  .form-check-label{
+    font-size: remCalc(14);
+  }
+
+  input.form-check-input{
+    width: 22px;
+    height: 21px;
+    margin: 0 5px 0 -17px;
+  }
+}

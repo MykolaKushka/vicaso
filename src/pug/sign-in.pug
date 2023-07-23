@@ -1,0 +1,25 @@
+doctype html
+html(lang='en')
+  head
+    include ./common/meta
+    title Vicaso
+
+    include ./common/links
+
+  body.login-page
+    .login-area
+      .text-center
+        a.login-area-logo(href='/')
+          
+      form
+        .form-area
+          .mb_20
+            input.form-control(type="email", placeholder="Email")
+          .mb_20
+            input.form-control(type="password", placeholder="Password")
+            .form-text Forgot password?
+          .mb_30.form-check
+            input#photographerLogin.form-check-input(type="checkbox")
+            label.form-check-label(for="photographerLogin") Login as Photographer
+          .text-center
+            button.btn.btn-primary Sign In

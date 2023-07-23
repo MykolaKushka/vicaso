@@ -1,0 +1,49 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+html{
+  overflow-x: hidden;
+  font-size: $base-font-size + px;
+  scroll-behavior: smooth;
+  font-family: $base-font-family;
+  color: $grey;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, input, textarea, button, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, address, section, video, audio {
+  border: 0;
+  outline: 0;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+
+img {
+  max-width: 100%;
+}
+
+a img {
+  border: none;
+}
+
+a{
+  text-decoration: none;  
+  transition: color .3s ease;
+
+  &:hover, &:active{
+  }
+}
+
+label{
+  display: inline-block;
+}
+
+.text-center{
+  text-align: center !important;
+}
