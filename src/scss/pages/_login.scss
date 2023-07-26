@@ -1,0 +1,45 @@
+.login-page{
+  background-color: $grey-bg;
+  min-height: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-area{
+  width: 100%;
+
+  .btn-primary{
+    width: 100%;
+  }
+}
+
+.login-area-logo{
+  display: inline-block;
+  width: 135px;
+  height: 40px;
+  margin-bottom: 20px;
+  background-size: contain;
+  background-image: url('../images/common/vicaso_logo_black.png');
+}
+
+@media(min-width: 575px){
+  .login-page{
+    background-image: url('../images/content/login-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .login-area-logo{
+    background-image: url('../images/common/vicaso_logo_white.png');
+  }
+
+  .login-area{
+    max-width: 340px;
+
+    .btn-primary{
+      width: auto;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.header-main{
+  background-color: $black;
+  padding: 11px 0;
+
+  a{
+    color: white;
+    font-size: remCalc(15);
+    margin-left: 45px;
+  }
+}
+
+.header-main-logo{
+  a{
+    display: inline-block;
+    margin: 0;
+  }
+
+  img{
+    width: 110px;
+  }
+}
+
+@media(max-width: 575px){
+  .header-main{
+    text-align: center;
+  }
+
+  .header-main-logo{
+    margin: 10px 0 20px;
+  }
+
+  .header-right-menu{
+    margin-bottom: 10px;
+  }
+}

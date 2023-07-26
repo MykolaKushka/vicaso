@@ -22,6 +22,13 @@
   &::placeholder{
     opacity: 1;
   }
+
+  &.form-control-small{
+    background-color: white;
+    width: 50px;
+    text-align: center;
+    padding: .11rem 5px .14rem;
+  }
 }
 
 .form-text{
@@ -33,7 +40,7 @@
 .form-check{
   min-height: 1.5rem;
   padding-left: 17px;
-  display: inline-flex;
+  display: flex;
   align-items: center;
 }
 
@@ -66,6 +73,16 @@ input.form-check-input{
   font-size: remCalc(16);
 }
 
+.form-check-2, .form-check-3{
+  input.form-check-input{
+    background-color: white;
+
+    &:checked{
+      background-color: $green-light;
+    }
+  }
+}
+
 @media(min-width: 575px){
   .form-area{
     padding: 46px 33px;
@@ -96,6 +113,18 @@ input.form-check-input{
   input.form-check-input{
     width: 22px;
     height: 21px;
-    margin: 0 5px 0 -17px;
+    margin: 1px 5px 0 -17px;
+  }
+
+  .form-check-2{
+    .form-check-label{
+      font-size: remCalc(25);
+    }
+  }
+
+  .form-check-2, .form-check-3{
+    input.form-check-input{
+      margin-right: 10px;
+    }
   }
 }

@@ -1,0 +1,110 @@
+doctype html
+html(lang='en')
+  head
+    include ./common/meta
+    title Vicaso
+
+    include ./common/links
+
+  body
+    include ./layouts/header
+
+    main
+      .container-fluid
+        .row
+          .col-lg-6.photos-area(style="background-image: url('./images/content/photos.jpg')")
+          .col-lg-6
+            .content-area
+              .d-xl-flex.justify-content-between.align-items-center.mb_15
+                h1.mb_0 Photos & Options
+                .d-flex.align-items-center
+                  | Subtotal
+                  span.text-black.fs-25.ms_5 $399
+
+              .content-items-area
+                .row
+                  .col-sm-6.pe-xl_40.fs-25.text-end
+                    .text-black.mb-sm_20 Exterior Photos
+                    .d-flex.align-items-center.justify-content-end.my_10
+                      .nowrap $10 x
+                      input.form-control.form-control-small.ms_10(type="text", value="5")
+                  .col-sm-6
+                    .form-check.form-check-3.mb_5
+                      input#blueSkies.form-check-input(type="checkbox")
+                      label.form-check-label(for="blueSkies", data-bs-toggle="tooltip", data-bs-placement="top", data-bs-title="Tooltip on top", data-bs-custom-class="custom-tooltip") Blue Skies ($0)
+                    .form-check.form-check-3.mb_5
+                      input#greenGrass.form-check-input(type="checkbox")
+                      label.form-check-label(for="greenGrass", data-bs-toggle="tooltip", data-bs-placement="top", data-bs-title="Tooltip on top", data-bs-custom-class="custom-tooltip") Green Grass ($0)
+                    .form-check.form-check-3.mb_5
+                      input#improveDepth.form-check-input(type="checkbox")
+                      label.form-check-label(for="improveDepth") Improve Depth ($50)
+                    .form-check.form-check-3.mb_5
+                      input#aerials.form-check-input(type="checkbox")
+                      label.form-check-label(for="aerials", data-bs-toggle="tooltip", data-bs-placement="top", data-bs-title="Tooltip on top", data-bs-custom-class="custom-tooltip") Aerials ($50)
+                    .form-check.form-check-3.mb_5
+                      input#twilightVersions.form-check-input(type="checkbox")
+                      label.form-check-label(for="twilightVersions", data-bs-toggle="tooltip", data-bs-placement="top", data-bs-title="Tooltip on top", data-bs-custom-class="custom-tooltip") Twilight Versions ($50)
+
+              .content-items-area
+                .row
+                  .col-sm-6.pe-xl_40.fs-25.text-end
+                    .text-black.mb-sm_20 Interior Photos
+                    .d-flex.align-items-center.justify-content-end.my_10
+                      .nowrap $10 x 
+                      input.form-control.form-control-small.ms_10(type="text", value="15")
+                  .col-sm-6
+                    .form-check.form-check-3.mb_5
+                      input#fireplaceFires.form-check-input(type="checkbox")
+                      label.form-check-label(for="fireplaceFires", data-bs-toggle="tooltip", data-bs-placement="top", data-bs-title="Tooltip on top", data-bs-custom-class="custom-tooltip") Fireplace Fires ($0)
+                    .form-check.form-check-3.mb_5
+                      input#imagesOnScreens.form-check-input(type="checkbox")
+                      label.form-check-label(for="imagesOnScreens", data-bs-toggle="tooltip", data-bs-placement="top", data-bs-title="Tooltip on top", data-bs-custom-class="custom-tooltip") Images on Screens ($0)
+                    .form-check.form-check-3.mb_5
+                      input#tidyUp.form-check-input(type="checkbox")
+                      label.form-check-label(for="tidyUp", data-bs-toggle="tooltip", data-bs-placement="top", data-bs-title="Tooltip on top", data-bs-custom-class="custom-tooltip") Tidy Up ($50)
+                    .form-check.form-check-3.mb_5
+                      input#addAppliances.form-check-input(type="checkbox")
+                      label.form-check-label(for="addAppliances", data-bs-toggle="tooltip", data-bs-placement="top", data-bs-title="Tooltip on top", data-bs-custom-class="custom-tooltip") Add Appliances ($50)
+
+              .content-items-area
+                .row
+                  .col-sm-6.pe-xl_40.fs-25.text-end
+                    .text-black.mb-sm_20 3D Matterport
+                    .form-check.form-check-2.justify-content-end.my_10
+                      input#3DMatterport.form-check-input(type="checkbox")
+                      label.form-check-label(for="3DMatterport") $150
+                  .col-sm-6
+                    .form-check.form-check-3.mb_5
+                      input#proFloorPlan.form-check-input(type="checkbox")
+                      label.form-check-label(for="proFloorPlan", data-bs-toggle="tooltip", data-bs-placement="top", data-bs-title="Tooltip on top", data-bs-custom-class="custom-tooltip") Pro Floor Plan ($50)
+                    .form-check.form-check-3.mb_5
+                      input#secondStory.form-check-input(type="checkbox")
+                      label.form-check-label(for="secondStory", data-bs-toggle="tooltip", data-bs-placement="top", data-bs-title="Tooltip on top", data-bs-custom-class="custom-tooltip") Second Story ($50)
+                    .form-check.form-check-3.mb_5
+                      input#thirdStory.form-check-input(type="checkbox")
+                      label.form-check-label(for="thirdStory", data-bs-toggle="tooltip", data-bs-placement="top", data-bs-title="Tooltip on top", data-bs-custom-class="custom-tooltip") Third Story ($50)
+
+              .content-items-area
+                .row
+                  .col-sm-6.pe-xl_40.fs-25.text-end
+                    .text-black.mb-sm_20 Cinematic Video
+                    .form-check.form-check-2.justify-content-end.my_10
+                      input#cinematicVideo.form-check-input(type="checkbox")
+                      label.form-check-label(for="cinematicVideo") $499
+                  .col-sm-6
+                    .form-check.form-check-3.mb_5
+                      input#addRealtorIntro.form-check-input(type="checkbox")
+                      label.form-check-label(for="addRealtorIntro", data-bs-toggle="tooltip", data-bs-placement="top", data-bs-title="Tooltip on top", data-bs-custom-class="custom-tooltip") Add Realtor Intro ($50)
+                    .form-check.form-check-3.mb_5
+                      input#socialMediaSizzle.form-check-input(type="checkbox")
+                      label.form-check-label(for="socialMediaSizzle", data-bs-toggle="tooltip", data-bs-placement="top", data-bs-title="Tooltip on top", data-bs-custom-class="custom-tooltip") Social Media Sizzle ($50)
+                    .form-check.form-check-3.mb_5
+                      input#up1minto2mins.form-check-input(type="checkbox")
+                      label.form-check-label(for="up1minto2mins", data-bs-toggle="tooltip", data-bs-placement="top", data-bs-title="Tooltip on top", data-bs-custom-class="custom-tooltip") Up 1min to 2mins ($100)
+
+              .mt_27
+                button.btn.btn-primary Next
+
+    include ./layouts/footer
+    script(src="./js/main.js" type="module")
+    script(src="./vendors/bootstrap/bootstrap.bundle.min.js")
