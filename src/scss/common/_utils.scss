@@ -77,6 +77,10 @@ label{
   display: none !important;
 }
 
+.gap-10{
+  gap: 10px;
+}
+
 .row{
   display: flex;
   flex-wrap: wrap;
@@ -116,6 +120,10 @@ label{
   }
 }
 
+.w-100{
+  width: 100%;
+}
+
 @media(min-width: 576px){
   .col-sm-auto {
     flex: 0 0 auto;
@@ -129,6 +137,10 @@ label{
 
   .d-sm-flex{
     display: flex !important;
+  }
+
+  .text-sm-start{
+    text-align: left !important;
   }
 }
 

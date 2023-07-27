@@ -18,6 +18,7 @@
   appearance: none;
   border-radius: 5px;
   transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  font-family: $base-font-family;
 
   &::placeholder{
     opacity: 1;
@@ -29,10 +30,10 @@
     text-align: center;
     padding: .11rem 5px .14rem;
   }
+}
 
-  &.form-control-medium{
-    width: 140px;
-  }
+textarea.form-control{
+  line-height: 1.2;
 }
 
 .form-text{
@@ -94,6 +95,14 @@ input.form-check-input{
 
   .form-control{
     padding: .33rem 15px .36rem;
+  }
+
+  .form-control-medium{
+    width: 150px;
+  }
+
+  .form-control-medium-2{
+    width: 200px;
   }
 
   .form-text{

@@ -25,8 +25,10 @@ html(lang='en')
                   span.text-black.fs-25.ms_5 $399
               .form-item
                 .d-sm-flex
-                  input.form-control.mb_15.mb-sm_0(type="text", placeholder="Enter address")
-                  input.form-control.form-control-medium.ms-sm_9(type="text", placeholder="unit/apt #")
+                  .mb_15.mb-sm_0.w-100
+                    input.form-control(type="text", placeholder="Enter address")
+                  .form-control-medium.ms-sm_9
+                    input.form-control(type="text", placeholder="unit/apt #")
                 .form-item-in
                   h3.h2 Property type
                   input.form-control.mb_15.mb-sm_0(type="text", value="Home")
@@ -38,7 +40,7 @@ html(lang='en')
                   input.form-control.mb_15.mb-sm_0(type="text", value="Single listing ($0)")
                 
               
-              .mt_27
+              .mt_35
                 button.btn.btn-primary Next
 
     include ./layouts/footer
