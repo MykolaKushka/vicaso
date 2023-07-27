@@ -34,8 +34,13 @@
   }
 }
 
-.mt_27{
-  margin-top: 27px !important;
+.mt{
+  &_27{
+    margin-top: 27px !important;
+  }
+  &_35{
+    margin-top: 35px !important;
+  }
 }
 
 .my_10{
