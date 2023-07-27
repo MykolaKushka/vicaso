@@ -43,14 +43,29 @@
   margin-bottom: 10px !important;
 }
 
-@media(min-width: 575px){
-  .mb-sm_20{
-    margin-bottom: 20px !important;
+@media(min-width: 576px){
+  .mb-sm{
+    &_0{
+      margin-bottom: 0 !important;
+    }
+
+    &_20{
+      margin-bottom: 20px !important;
+    }
   }
+
+  .ms-sm_9{
+    margin-left: 9px !important;
+  } 
+
 }
 
 @media(min-width: 1200px){
   .pe-xl_40{
     padding-right: 40px !important;
+  }
+
+  .mb-xl_0{
+    margin-bottom: 0 !important;
   }
 }

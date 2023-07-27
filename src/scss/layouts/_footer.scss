@@ -14,7 +14,7 @@
       a{
         font-weight: 600;
         color: $grey-3;
-        font-size: remCalc(15);
+        font-size: remCalc(22);
 
         &:hover, &:active{
           color: $grey-3-hover;
@@ -24,7 +24,7 @@
   }
 }
 
-@media(min-width: 575px){
+@media(min-width: 576px){
   .footer-main{
     ul{
       display: flex;
@@ -32,6 +32,10 @@
 
       li{
         margin: 0 20px;
+
+        a{
+          font-size: remCalc(15);
+        }
       }
     }
   }

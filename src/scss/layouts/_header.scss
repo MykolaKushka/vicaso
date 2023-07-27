@@ -23,6 +23,10 @@
 @media(max-width: 575px){
   .header-main{
     text-align: center;
+
+    a{
+      font-size: remCalc(18);
+    }
   }
 
   .header-main-logo{

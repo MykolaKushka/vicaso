@@ -29,6 +29,10 @@
     text-align: center;
     padding: .11rem 5px .14rem;
   }
+
+  &.form-control-medium{
+    width: 140px;
+  }
 }
 
 .form-text{
@@ -83,7 +87,7 @@ input.form-check-input{
   }
 }
 
-@media(min-width: 575px){
+@media(min-width: 576px){
   .form-area{
     padding: 46px 33px;
   }

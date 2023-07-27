@@ -12,11 +12,11 @@ html(lang='en')
     main
       .container-fluid
         .row
-          .col-lg-6.photos-area(style="background-image: url('./images/content/photos.jpg')")
+          .col-lg-6.d-none.d-lg-block.photos-area(style="background-image: url('./images/content/photos.jpg')")
           .col-lg-6
             .content-area
               .d-xl-flex.justify-content-between.align-items-center.mb_15
-                h1.mb_0 Photos & Options
+                h1.mb-xl_0 Photos & Options
                 .d-flex.align-items-center
                   | Subtotal
                   span.text-black.fs-25.ms_5 $399
@@ -37,7 +37,7 @@ html(lang='en')
                       label.form-check-label(for="greenGrass", data-bs-toggle="tooltip", data-bs-placement="top", data-bs-title="Tooltip on top", data-bs-custom-class="custom-tooltip") Green Grass ($0)
                     .form-check.form-check-3.mb_5
                       input#improveDepth.form-check-input(type="checkbox")
-                      label.form-check-label(for="improveDepth") Improve Depth ($50)
+                      label.form-check-label(for="improveDepth", data-bs-toggle="tooltip", data-bs-placement="top", data-bs-title="Tooltip on top", data-bs-custom-class="custom-tooltip") Improve Depth ($50)
                     .form-check.form-check-3.mb_5
                       input#aerials.form-check-input(type="checkbox")
                       label.form-check-label(for="aerials", data-bs-toggle="tooltip", data-bs-placement="top", data-bs-title="Tooltip on top", data-bs-custom-class="custom-tooltip") Aerials ($50)

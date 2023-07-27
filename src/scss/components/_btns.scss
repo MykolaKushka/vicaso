@@ -35,14 +35,18 @@
   }
 
   &-medium{
-    font-size: remCalc(15);
+    font-size: remCalc(18);
     padding: 9px 42px;
   }
 }
 
-@media(min-width: 575px){
+@media(min-width: 576px){
   .btn{
     font-size: remCalc(20);
     padding: 13px 73px 14px;
+
+    &-medium{
+      font-size: remCalc(15);
+    }
   }
 }

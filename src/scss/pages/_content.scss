@@ -17,10 +17,20 @@
   }
 }
 
+.form-item{
+  max-width: 535px;
+}
+
 .photos-area{
   min-height: calc(100vh - 117px);
   background-size: cover;
   background-position: center;
+}
+
+.map-area{
+  min-height: calc(100vh - 117px);
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 @media(max-width: 991px){
