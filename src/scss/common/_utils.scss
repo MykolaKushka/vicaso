@@ -17,6 +17,10 @@ body{
   &.dark-theme{
     background-color: $black;
   }
+
+  &.white-theme{
+    background-color: white;
+  }
 }
 
 html, body {
