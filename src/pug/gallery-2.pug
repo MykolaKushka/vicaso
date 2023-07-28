@@ -1,0 +1,41 @@
+doctype html
+html(lang='en')
+  head
+    include ./common/meta
+    title Vicaso
+
+    include ./common/links
+
+  body.dark-theme
+    include ./layouts/header-2
+
+    main
+      .container
+        .gallery
+          .row.gap-10.mx_0
+            .col-md-6.col-lg-4.gallery-item.gallery-edit-1
+              .gallery-text-2
+                .my_10 Some text with Button
+                div
+                  button.btn.btn-secondary.btn-medium-2 OK
+            .col-md-6.col-lg-4.gallery-item.gallery-edit-2
+              .gallery-text-2
+                .my_10 Some text with Button
+                div
+                  button.btn.btn-secondary.btn-medium-2 OK
+            .col-md-6.col-lg-4.gallery-item.gallery-edit-3
+              .gallery-text-2
+                .my_10 Some text with Button
+                div
+                  button.btn.btn-secondary.btn-medium-2 OK
+            .col-md-6.col-lg-4.gallery-item.gallery-edit-4
+              .gallery-text-2
+                .my_10 Some text with Button
+                div
+                  button.btn.btn-secondary.btn-medium-2 OK
+            .col-md-6.col-lg-4.gallery-item.gallery-item-sold(style="background-image: url('./images/content/gallery-5.jpg')")
+              .gallery-item-sold-text SOLD
+            .col-md-6.col-lg-4.gallery-item(style="background-image: url('./images/content/gallery-6.jpg')")
+              .gallery-text 17841 Woodside Avenue
+
+    include ./layouts/footer-2

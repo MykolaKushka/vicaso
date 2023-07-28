@@ -1,0 +1,109 @@
+.gallery-item{
+  border-radius: 15px;
+  overflow: hidden;
+  height: 338px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 0;
+
+  &:hover, &:active{
+
+    .gallery-text, .gallery-text-2{
+      opacity: 1;
+    }
+  }
+}
+
+.gallery-text, .gallery-text-2{
+  color: white;
+  font-weight: 600;
+  background-color: rgba(28, 28, 28, 0.6);
+  font-size: remCalc(25);
+  padding: 16px 25px;
+  position: absolute;
+  width: 101%;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity .5s ease;
+  border-radius: 0 0 15px 15px;
+}
+
+.gallery-text-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.gallery-item-sold{
+  font-size: remCalc(50);
+  font-weight: 600;
+  color: white;
+
+  .gallery-item-sold-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .6)
+  }
+}
+
+[class*="gallery-edit"]{
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+
+  &:hover, &:active{
+    background-image: none;
+  }
+}
+
+.gallery-edit-1{
+  background-color: $green;
+  background-image: url('../images/icons/tick.png');
+  background-size: 104px auto;
+}
+
+.gallery-edit-2{
+  background-color: $green-2;
+  background-image: url('../images/icons/paint.png');
+  background-size: 93px auto;
+}
+
+.gallery-edit-3{
+  background-color: $blue;
+  background-image: url('../images/icons/photo.png');
+  background-size: 111px auto;
+}
+
+.gallery-edit-4{
+  background-color: $grey-5;
+  background-image: url('../images/icons/send.png');
+  background-size: 95px auto;
+}
+
+@media(min-width: 768px){
+  .gallery-item{
+    width: calc(50% - 7px) !important;
+  }
+}
+
+@media(min-width: 992px){
+  .gallery-item{
+    width: calc(33.33333333% - 7px) !important;
+  }
+}
+
+@media(min-width: 1450px){
+  .gallery{
+    margin-left: -36px;
+    margin-right: -36px;
+  }
+}
+
