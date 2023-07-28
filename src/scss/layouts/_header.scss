@@ -20,6 +20,15 @@
   }
 }
 
+.header-user{
+  width: 33px;
+  height: 33px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: $green-light;
+  margin-right: 10px;
+}
+
 @media(max-width: 575px){
   .header-main{
     text-align: center;

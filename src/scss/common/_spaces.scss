@@ -1,3 +1,8 @@
+.mx_0{
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
 .mb_{
   &0{
     margin-bottom: 0 !important;
@@ -50,6 +55,10 @@
 .my_10{
   margin-top: 10px !important;
   margin-bottom: 10px !important;
+}
+
+.p_0{
+  padding: 0 !important;
 }
 
 @media(min-width: 576px){

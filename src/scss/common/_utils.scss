@@ -9,7 +9,14 @@ html{
   font-family: $base-font-family;
   color: $grey;
   font-weight: 500;
+}
+
+body{
   background-color: $grey-bg;
+
+  &.dark-theme{
+    background-color: $black;
+  }
 }
 
 html, body {
@@ -75,6 +82,10 @@ label{
 
 .d-none{
   display: none !important;
+}
+
+.d-inline-flex{
+  display: inline-flex !important;
 }
 
 .gap-10{
@@ -144,7 +155,19 @@ label{
   }
 }
 
+@media(min-width: 768px){
+  .col-md-6{
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+
 @media(min-width: 992px){
+  .col-lg-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+
   .col-lg-6{
     flex: 0 0 auto;
     width: 50%;
