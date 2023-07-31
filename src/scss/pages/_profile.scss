@@ -1,0 +1,40 @@
+.profile-area{
+  background-color: $grey-bg;
+  border-radius: 15px;
+  padding: 23px;
+  margin-bottom: 30px;
+}
+
+.profile-photo-upload{
+  width: 223px;
+  height: 223px;
+  background-color: $grey-bg-5;
+  border-radius: 50%;
+  margin-bottom: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 17px;
+
+  label{
+    color: $black-2;
+    font-size: remCalc(15);
+    display: block;
+    text-align: center;
+    background-color: white;
+    border: 1px solid $grey-border-3;
+    border-radius: 37px;
+    padding: 5px 18px;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media(min-width: 1450px){
+  .profile-area{
+    margin-left: -36px;
+    margin-right: -36px;
+  }
+}

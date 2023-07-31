@@ -77,6 +77,13 @@ input.form-check-input{
   font-size: remCalc(16);
 }
 
+.form-label{
+  color: $grey-6;
+  font-size: remCalc(15);
+  width: 100%;
+  padding: 0 0 5px 15px;
+}
+
 @media(min-width: 576px){
   .form-area{
     padding: 46px 33px;

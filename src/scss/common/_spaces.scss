@@ -41,6 +41,10 @@
   &10{
     margin-left: 10px !important;
   }
+
+  &20{
+    margin-left: 20px !important;
+  }
 }
 
 .mt{
@@ -61,6 +65,10 @@
   padding: 0 !important;
 }
 
+.pe_0{
+  padding-right: 0 !important;
+}
+
 @media(min-width: 576px){
   .mb-sm{
     &_0{
@@ -76,6 +84,16 @@
     margin-left: 9px !important;
   } 
 
+}
+
+@media(min-width: 992px){
+  .ms-lg_20{
+    margin-left: 20px !important;
+  }
+
+  .pe-lg_0{
+    padding-right: 0 !important;
+  }
 }
 
 @media(min-width: 1200px){

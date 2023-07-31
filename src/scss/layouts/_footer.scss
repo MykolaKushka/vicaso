@@ -28,6 +28,10 @@
   background-color: transparent;
 }
 
+.white-theme .footer-main{
+  background-color: $black;
+}
+
 @media(min-width: 576px){
   .footer-main{
     ul{

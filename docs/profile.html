@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vicaso</title>
-    <link rel="stylesheet" href="./css/main.css?v=20230729">
+    <link rel="stylesheet" href="./css/main.css?v=20230801">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&amp;display=swap" rel="stylesheet">
@@ -14,14 +14,75 @@
     <header class="header-main">
       <div class="container">
         <div class="row align-items-center justify-content-between">
-          <div class="col-sm-auto header-main-logo"><a href="/"><img src="./images/common/vicaso_logo_white.png" alt=""></a></div>
+          <div class="col-sm-auto header-main-logo"><a href="/"></a></div>
           <div class="col-sm-auto header-right-menu"><a class="d-inline-flex align-items-center" href="#"> <span class="header-user"></span>Marilyn</a></div>
         </div>
       </div>
     </header>
     <main>
       <div class="container">
-        <div class="profile"></div>
+        <div class="profile-area">
+          <h2 class="h1 text-center">Profile</h2>
+          <div class="row">
+            <div class="col-lg-auto text-center mb_20">
+              <div class="profile-photo-upload">
+                <input class="custom-file-input" id="uploadPhoto" type="file" hidden="hidden">
+                <label for="uploadPhoto">Upload profile photo</label>
+              </div>
+              <div>
+                <button class="btn btn-primary">Save</button>
+              </div>
+            </div>
+            <div class="col-lg">
+              <div class="row mb_10">
+                <div class="col-md-4 pe_0 mb_10">
+                  <label class="form-label" for="firstName">First Name</label>
+                  <input class="form-control" id="firstName" type="text" value="Michelle">
+                </div>
+                <div class="col-md-4 pe_0 mb_10">
+                  <label class="form-label" for="lastName">Last Name</label>
+                  <input class="form-control" id="lastName" type="text" value="Williams">
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label" for="email">Email</label>
+                  <input class="form-control" id="email" type="email" value="mwilliams@cbbain.com">
+                </div>
+              </div>
+              <div class="row mb_10">
+                <div class="col-md-4 pe_0 mb_10">
+                  <label class="form-label" for="ccEmail">CC Email</label>
+                  <input class="form-control" id="ccEmail" type="text" value="Michelle">
+                </div>
+                <div class="col-md-4 pe_0 mb_10">
+                  <label class="form-label" for="officePhone">Office Phone</label>
+                  <input class="form-control" id="officePhone" type="tel" value="206-234-5433">
+                </div>
+                <div class="col-md-4">
+                  <label class="form-label" for="cellPhone">Cell Phone</label>
+                  <input class="form-control" id="cellPhone" type="tel" value="425-534-2344">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="profile-area"> 
+          <h2 class="h1 text-center">Password</h2>
+          <div class="ms-lg_20">
+            <div class="row mb_30">
+              <div class="col-lg-6 pe-lg_0 mb_10">
+                <label class="form-label" for="newPassword">New Password</label>
+                <input class="form-control" id="newPassword" type="password">
+              </div>
+              <div class="col-lg-6">
+                <label class="form-label" for="confirmPassword">Confirm Password</label>
+                <input class="form-control" id="confirmPassword" type="password">
+              </div>
+            </div>
+            <div>
+              <button class="btn btn-primary">Save</button>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <footer class="footer-main">
@@ -38,5 +99,6 @@
         </nav>
       </div>
     </footer>
+    <script src="./js/main.js" type="module"></script>
   </body>
 </html>

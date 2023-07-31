@@ -11,6 +11,48 @@ html(lang='en')
 
     main
       .container
-        .profile
+        .profile-area
+          h2.h1.text-center Profile
+          .row
+            .col-lg-auto.text-center.mb_20
+              .profile-photo-upload
+                input.custom-file-input#uploadPhoto(type="file", hidden="hidden") 
+                label(for="uploadPhoto") Upload profile photo
+              div
+                button.btn.btn-primary Save
+            .col-lg
+              .row.mb_10
+                .col-md-4.pe_0.mb_10
+                  label.form-label(for="firstName") First Name
+                  input#firstName.form-control(type="text", value="Michelle")
+                .col-md-4.pe_0.mb_10
+                  label.form-label(for="lastName") Last Name
+                  input#lastName.form-control(type="text", value="Williams")
+                .col-md-4
+                  label.form-label(for="email") Email
+                  input#email.form-control(type="email", value="mwilliams@cbbain.com")
+              .row.mb_10
+                .col-md-4.pe_0.mb_10
+                  label.form-label(for="ccEmail") CC Email
+                  input#ccEmail.form-control(type="text", value="Michelle")
+                .col-md-4.pe_0.mb_10
+                  label.form-label(for="officePhone") Office Phone
+                  input#officePhone.form-control(type="tel", value="206-234-5433")
+                .col-md-4
+                  label.form-label(for="cellPhone") Cell Phone
+                  input#cellPhone.form-control(type="tel", value="425-534-2344")
+        .profile-area 
+          h2.h1.text-center Password
+          .ms-lg_20
+            .row.mb_30
+              .col-lg-6.pe-lg_0.mb_10
+                label.form-label(for="newPassword") New Password
+                input#newPassword.form-control(type="password")
+              .col-lg-6
+                label.form-label(for="confirmPassword") Confirm Password
+                input#confirmPassword.form-control(type="password")
+            div
+              button.btn.btn-primary Save
           
     include ./layouts/footer-2
+    script(src="./js/main.js" type="module")
