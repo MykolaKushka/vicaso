@@ -24,6 +24,10 @@
   }
 }
 
+.footer-main-2{
+  padding: 28px 0 29px;
+}
+
 .dark-theme .footer-main{
   background-color: transparent;
 }
@@ -49,7 +53,7 @@
   }
 }
 
-@media(min-width: 768px){
+@media(min-width: 992px){
   .footer-main ul li{
     margin: 0 51px;
   }
