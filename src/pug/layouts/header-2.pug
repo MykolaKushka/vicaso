@@ -4,6 +4,14 @@ header.header-main.header-main-2
       .col-sm-auto.header-main-logo
         a(href="/")
       .col-sm-auto.header-right-menu
-        a.d-inline-flex.align-items-center(href="#") 
-          span.header-user
-          | Marilyn
+        .dropdown
+          a.d-inline-flex.align-items-center.dropdown-toggle(href="#", role="button", data-bs-toggle="dropdown", aria-expanded="false") 
+            span.header-user
+            | Marilyn
+          ul.dropdown-menu
+            li
+              a.dropdown-item(href="#") Dropdown Item
+            li
+              a.dropdown-item(href="#") Dropdown Item 2
+            li
+              a.dropdown-item(href="#") Dropdown Item 3
