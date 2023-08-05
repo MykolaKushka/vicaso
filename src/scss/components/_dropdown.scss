@@ -36,6 +36,18 @@
   }
 }
 
+@media(max-width: 574px) {
+  .header-right-menu .dropdown-menu{
+    width: calc(100% + 74px);
+
+    &.show{
+      transform: translateX(-37px) !important;
+      inset: auto !important;
+      margin: 21px 0 0 !important;
+    }  
+  }
+}
+
 @media(min-width: 575px) {
   .header-main .dropdown-menu.show{
     margin: 13px 0 0 !important;
