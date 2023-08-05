@@ -23,7 +23,19 @@
       background-color: $black-hover;
       border-color: $black-hover;
     }
+
+    &:disabled{
+      opacity: .1;
+      cursor: default;
+
+      &:hover, &:active{
+        background-color: black;
+        border-color: black;
+      }
+    }
   }
+
+  
 
   &-secondary{
     background-color: $grey-4;

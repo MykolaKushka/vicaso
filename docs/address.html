@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vicaso</title>
-    <link rel="stylesheet" href="./css/main.css?v=20230802-2">
+    <link rel="stylesheet" href="./css/main.css?v=20230805">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&amp;display=swap" rel="stylesheet">
@@ -26,7 +26,7 @@
             <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26957.595644419718!2d-111.0088491619401!3d32.373607070961825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86d60c9846703bc7%3A0x4e4e1dafec9eb44c!2zUmFuY2hvIEZlbGl6LCDQntGA0L4t0JLQtdC50LvRliwg0JDRgNGW0LfQvtC90LAsINCh0L_QvtC70YPRh9C10L3RliDQqNGC0LDRgtC4INCQ0LzQtdGA0LjQutC4!5e0!3m2!1suk!2sua!4v1690477582523!5m2!1suk!2sua" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <div class="col-lg-6">
-            <div class="content-area">
+            <div class="content-area" id="addressArea">
               <div class="mb_30"><a href="#">< Back to Photos </a></div>
               <div class="d-xl-flex justify-content-between align-items-center mb_30">
                 <h1 class="mb-xl_0">Listing address</h1>
@@ -34,28 +34,85 @@
               </div>
               <div class="form-item">
                 <div class="d-sm-flex">
-                  <div class="mb_15 mb-sm_0 w-100">
+                  <div class="mb_15 mb-sm_0 w-100 form-item form-item-shown">
                     <input class="form-control" type="text" placeholder="Enter address">
                   </div>
-                  <div class="form-control-medium ms-sm_9">
+                  <div class="form-control-medium ms-sm_9 form-item form-item-shown">
                     <input class="form-control" type="text" placeholder="unit/apt #">
                   </div>
                 </div>
-                <div class="form-item-in d-none">
+                <div class="form-item form-item-in height-0">
                   <h3 class="h2">Property type</h3>
-                  <input class="form-control mb_15 mb-sm_0" type="text" value="Home">
+                  <select class="form-control mb_15 mb-sm_0"> 
+                    <option value="0" selected="selected">Select property type</option>
+                    <option value="1">Single Family Home</option>
+                    <option value="3">Condo / Apt / Townhome</option>
+                    <option value="7">Boat / Yacht</option>
+                    <option value="19">Auto / Motorhome</option>
+                  </select>
                 </div>
-                <div class="form-item-in d-none">
+                <div class="form-item form-item-in height-0">
                   <h3 class="h2">Size</h3>
-                  <input class="form-control mb_15 mb-sm_0" type="text" value="3 bedrooms ($199 + photos)">
+                  <input class="form-control mb_15 mb-sm_0" type="text" placeholder="3 bedrooms ($199 + photos)">
                 </div>
-                <div class="form-item-in d-none">
+                <div class="form-item form-item-in height-0">
                   <h3 class="h2">Use license</h3>
-                  <input class="form-control mb_15 mb-sm_0" type="text" value="Single listing ($0)">
+                  <input class="form-control mb_15 mb-sm_0" type="text" placeholder="Single listing ($0)">
+                </div>
+                <div class="form-item form-item-in height-0" id="shootDateArea">
+                  <h3 class="h2">Shoot Date</h3>
+                  <div class="mb_30">We’ll book closest to this and confirm today.</div>
+                  <div class="d-sm-flex mb_15">
+                    <div class="form-control-medium-2 mb_15 mb-sm_0">
+                      <input class="form-control" type="date">
+                    </div>
+                    <div class="form-control-medium mb_15 mb-sm_0 ms-sm_9">
+                      <input class="form-control" type="time">
+                    </div>
+                    <div class="mb-sm_0 ms-sm_9 w-100">
+                      <input class="form-control" type="text" value="Photos ready next day ($0)">
+                    </div>
+                  </div>
+                  <div class="mb_5">Alternate Date/Time</div>
+                  <div class="d-sm-flex mb_15">
+                    <div class="form-control-medium-2 mb_15 mb-sm_0">
+                      <input class="form-control" type="date">
+                    </div>
+                    <div class="form-control-medium mb_15 mb-sm_0 ms-sm_9">
+                      <input class="form-control" type="time">
+                    </div>
+                    <div class="mb-sm_0 ms-sm_9 w-100">
+                      <input class="form-control" type="text" value="Photos ready next day ($0)">
+                    </div>
+                  </div>
+                  <div class="form-item-in">
+                    <h3 class="h2">Will you attend?</h3>
+                    <div class="mb_10">
+                      <input class="form-control" type="text" value="No. I give permission to enter (most common)">
+                    </div>
+                    <div class="mb_10">
+                      <textarea class="form-control" cols="30" rows="5">Lockbox code # and any additional shoot instructions here.</textarea>
+                    </div>
+                  </div>
+                  <div class="form-item-in">
+                    <h3 class="h2">Login</h3>
+                    <div class="d-sm-flex gap-10">
+                      <div class="mb_15">
+                        <input class="form-control" type="email" placeholder="Email">
+                      </div>
+                      <div class="mb_15">
+                        <input class="form-control" type="password" placeholder="Password">
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="mt_35">
-                <button class="btn btn-primary" id="nextBtn">Next</button>
+              <div class="mt_35" id="nextBtnArea">
+                <button class="btn btn-primary" id="nextBtn" disabled="disabled">Next</button>
+              </div>
+              <div class="mt_35 text-center text-sm-start d-none" id="loginBtnArea">
+                <button class="btn btn-primary btn-medium-2">Sign In</button>
+                <button class="btn btn-secondary btn-medium-2 ms_10">New User?</button>
               </div>
             </div>
           </div>

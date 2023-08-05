@@ -121,6 +121,14 @@ label{
   }
 }
 
+.height-0{
+  height: 0 !important;
+  margin: 0 !important;
+  opacity: 0 !important;
+  overflow: hidden;
+  visibility: hidden;
+}
+
 .nowrap{
   white-space: nowrap;
 }

@@ -84,6 +84,11 @@ input.form-check-input{
   padding: 0 0 5px 15px;
 }
 
+.form-item-in{
+  opacity: 1;
+  transition: opacity ease-in .5s;
+}
+
 @media(min-width: 576px){
   .form-area{
     padding: 46px 33px;
