@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vicaso</title>
-    <link rel="stylesheet" href="./css/main.css?v=20230806-6">
+    <link rel="stylesheet" href="./css/main.css?v=20230806-8">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&amp;display=swap" rel="stylesheet">
@@ -22,7 +22,16 @@
     <main>
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-6 d-none d-lg-block photos-area" style="background-image: url('./images/content/photos.jpg')"></div>
+          <div class="col-lg-6 d-none d-lg-block photos-area" id="photosArea" style="background-image: url('./images/content/photos.jpg')"></div>
+          <div class="col-lg-6 d-none video-area" id="videoArea">
+            <iframe src="https://player.vimeo.com/video/851858478?badge=0&amp;amp;autopause=0&amp;amp;player_id=0&amp;amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="20615 Northeast 142nd Street"></iframe>
+            <iframe src="https://player.vimeo.com/video/851858077?badge=0&amp;amp;autopause=0&amp;amp;player_id=0&amp;amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="9411 31st Street West"></iframe>
+          </div>
+          <div class="col-lg-6 d-none threeD-tours" id="threeDTours">
+            <iframe src="https://my.matterport.com/show/?m=7YYwCrWrZwA" frameborder="0" allowfullscreen allow="xr-spatial-tracking"></iframe>
+            <iframe src="https://my.matterport.com/show/?m=F4YMxB5L4PQ" frameborder="0" allowfullscreen allow="xr-spatial-tracking"></iframe>
+            <iframe src="https://my.matterport.com/show/?m=546snmqkRhA" frameborder="0" allowfullscreen allow="xr-spatial-tracking"></iframe>
+          </div>
           <div class="col-lg-6">
             <div class="content-area">
               <div class="d-xl-flex justify-content-between align-items-center mb_15">
@@ -95,7 +104,7 @@
                 <div class="row">
                   <div class="col-sm-6 pe-xl_40 fs-25 text-end">
                     <div class="text-black mb-sm_20 d-inline-flex">
-                       3D Tours <i class="icon-eye ms_10"></i></div>
+                       3D Tours <i class="icon-eye ms_10" id="threeDBtn"></i></div>
                     <div class="form-check form-check-2 justify-content-end my_10">
                       <input class="form-check-input" id="3DMatterport" type="checkbox">
                       <label class="form-check-label" for="3DMatterport">$150</label>
@@ -121,7 +130,7 @@
                 <div class="row">
                   <div class="col-sm-6 pe-xl_40 fs-25 text-end">
                     <div class="text-black mb-sm_20 d-inline-flex">
-                       Pro Video<i class="icon-eye ms_10"></i></div>
+                       Pro Video<i class="icon-eye ms_10" id="videoBtn"></i></div>
                     <div class="form-check form-check-2 justify-content-end my_10">
                       <input class="form-check-input" id="cinematicVideo" type="checkbox">
                       <label class="form-check-label" for="cinematicVideo">$499</label>
@@ -164,6 +173,7 @@
       </div>
     </footer>
     <script src="./js/main.js?v=20230805-2" type="module"></script>
+    <script src="./js/multimediaBtn.js"></script>
     <script src="./vendors/bootstrap/bootstrap.bundle.min.js"></script>
   </body>
 </html>

@@ -12,7 +12,15 @@ html(lang='en')
     main
       .container-fluid
         .row
-          .col-lg-6.d-none.d-lg-block.photos-area(style="background-image: url('./images/content/photos.jpg')")
+          .col-lg-6.d-none.d-lg-block.photos-area#photosArea(style="background-image: url('./images/content/photos.jpg')")
+          .col-lg-6.d-none.video-area#videoArea
+            iframe(src="https://player.vimeo.com/video/851858478?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", frameborder="0", allow="autoplay; fullscreen; picture-in-picture", title="20615 Northeast 142nd Street")
+            iframe(src="https://player.vimeo.com/video/851858077?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479", frameborder="0", allow="autoplay; fullscreen; picture-in-picture", title="9411 31st Street West")
+          .col-lg-6.d-none.threeD-tours#threeDTours
+            iframe(src='https://my.matterport.com/show/?m=7YYwCrWrZwA', frameborder='0', allowfullscreen, allow='xr-spatial-tracking')
+            iframe(src='https://my.matterport.com/show/?m=F4YMxB5L4PQ', frameborder='0', allowfullscreen, allow='xr-spatial-tracking')
+            iframe(src='https://my.matterport.com/show/?m=546snmqkRhA', frameborder='0', allowfullscreen, allow='xr-spatial-tracking')
+        
           .col-lg-6
             .content-area
               .d-xl-flex.justify-content-between.align-items-center.mb_15
@@ -71,7 +79,7 @@ html(lang='en')
                   .col-sm-6.pe-xl_40.fs-25.text-end
                     .text-black.mb-sm_20.d-inline-flex 
                       | 3D Tours 
-                      i.icon-eye.ms_10
+                      i.icon-eye.ms_10#threeDBtn
                     .form-check.form-check-2.justify-content-end.my_10
                       input#3DMatterport.form-check-input(type="checkbox")
                       label.form-check-label(for="3DMatterport") $150
@@ -91,7 +99,7 @@ html(lang='en')
                   .col-sm-6.pe-xl_40.fs-25.text-end
                     .text-black.mb-sm_20.d-inline-flex 
                       | Pro Video
-                      i.icon-eye.ms_10
+                      i.icon-eye.ms_10#videoBtn
                     .form-check.form-check-2.justify-content-end.my_10
                       input#cinematicVideo.form-check-input(type="checkbox")
                       label.form-check-label(for="cinematicVideo") $499
@@ -111,4 +119,5 @@ html(lang='en')
 
     include ./layouts/footer
     script(src="./js/main.js?v=20230805-2" type="module")
+    script(src="./js/multimediaBtn.js")
     script(src="./vendors/bootstrap/bootstrap.bundle.min.js")
