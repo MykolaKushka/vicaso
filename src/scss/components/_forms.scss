@@ -22,6 +22,7 @@
 
   &::placeholder{
     opacity: 1;
+    color: lightgray;
   }
 
   &.form-control-small{
@@ -87,6 +88,7 @@ input.form-check-input{
 .form-item-in{
   opacity: 1;
   transition: opacity ease-in .5s;
+  margin-top: 35px;
 }
 
 @media(min-width: 576px){
@@ -140,5 +142,11 @@ input.form-check-input{
     input.form-check-input{
       margin-right: 10px;
     }
+  }
+}
+
+@media(min-width: 992px){
+  .form-item{
+    max-width: 480px;
   }
 }

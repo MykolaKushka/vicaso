@@ -23,70 +23,69 @@ html(lang='en')
                 .d-flex.align-items-center
                   | Subtotal
                   span.text-black.fs-25.ms_5 $399
-              .form-item
-                .row
-                  .col-lg-6.mb_15.pe-lg_0.form-item.form-item-shown
-                    input.form-control(type="text", placeholder="Street#")
-                  .col-lg-6.mb_15.form-item.form-item-shown
-                    input.form-control(type="text")
-                  .col-lg-6.mb_15.pe-lg_0.form-item.form-item-shown
-                    input.form-control(type="text", placeholder="unit/apt #")
-                  .col-lg-6.mb_15.form-item.form-item-shown
-                    input.form-control(type="text")
-                .row
-                  .col-lg-4.pe-lg_0.mb_15.form-item.form-item-shown
-                    input.form-control(type="text")
-                  .col-lg-4.pe-lg_0.mb_15.form-item.form-item-shown
-                    input.form-control(type="text", placeholder="Zip")
-                  .col-lg-4.mb_15.form-item.form-item-shown
-                    input.form-control(type="text")
-                .form-item.form-item-in.height-0
-                  h3.h2 Property type
-                  select.form-control.mb_15.mb-sm_0 
-                    option(value="0", selected="selected") Select property type
-                    option(value="1") Single Family Home
-                    option(value="3") Condo / Apt / Townhome
-                    option(value="7") Boat / Yacht
-                    option(value="19") Auto / Motorhome
-                .form-item.form-item-in.height-0
-                  h3.h2 Size
-                  input.form-control.mb_15.mb-sm_0(type="text", placeholder="3 bedrooms ($199 + photos)")
-                .form-item.form-item-in.height-0
-                  h3.h2 Use license
-                  input.form-control.mb_15.mb-sm_0(type="text", placeholder="Single listing ($0)")
+              .row.form-item
+                .col-md-4.mb_15.pe-md_0.form-item.form-item-shown
+                  input.form-control(type="text", placeholder="Street#")
+                .col-md-5.mb_15.pe-md_0.form-item.form-item-shown
+                  input.form-control(type="text", placeholder="Street name")
+                .col-md-3.mb_15.pe-md_0.form-item.form-item-shown
+                  input.form-control(type="text", placeholder="Unit/apt #")
+              .row.form-item
+                .col-md-3.pe-md_0.mb_15.form-item.form-item-shown
+                  input.form-control(type="text", placeholder="City")
+                .col-md-3.pe-md_0.mb_15.form-item.form-item-shown
+                  input.form-control(type="text", placeholder="State")
+                .col-md-3.pe-md_0.mb_15.form-item.form-item-shown
+                  input.form-control(type="text", placeholder="Zip")
+                .col-md-3.pe-md_0.mb_15.form-item.form-item-shown
+                  input.form-control(type="text", placeholder="Country")
+              .form-item.form-item-in.height-0
+                h3.h2 Property type
+                select.form-control.mb_15.mb-sm_0 
+                  option(value="0", selected="selected") Select property type
+                  option(value="1") Single Family Home
+                  option(value="3") Condo / Apt / Townhome
+                  option(value="7") Boat / Yacht
+                  option(value="19") Auto / Motorhome
+              .form-item.form-item-in.height-0
+                h3.h2 Size
+                input.form-control.mb_15.mb-sm_0(type="text", placeholder="3 bedrooms ($199 + photos)")
+              .form-item.form-item-in.height-0
+                h3.h2 Use license
+                input.form-control.mb_15.mb-sm_0(type="text", placeholder="Single listing ($0)")
 
-                .form-item.form-item-in.height-0#shootDateArea
-                  h3.h2 Shoot Date
-                  .mb_30 We’ll book closest to this and confirm today.
+              .form-item.form-item-in.height-0#shootDateArea
+                h3.h2 Shoot Date
+                .mb_30 We’ll book closest to this and confirm today.
 
-                  .d-sm-flex.mb_15
-                    .form-control-medium-2.mb_15.mb-sm_0
-                      input.form-control(type="date")
-                    .form-control-medium.mb_15.mb-sm_0.ms-sm_9
-                      input.form-control(type="time")
-                    .mb-sm_0.ms-sm_9.w-100
-                      input.form-control(type="text", value="Photos ready next day ($0)")
-                  .mb_5 Alternate Date/Time
-                  .d-sm-flex.mb_15
-                    .form-control-medium-2.mb_15.mb-sm_0
-                      input.form-control(type="date")
-                    .form-control-medium.mb_15.mb-sm_0.ms-sm_9
-                      input.form-control(type="time")
-                    .mb-sm_0.ms-sm_9.w-100
-                      input.form-control(type="text", value="Photos ready next day ($0)")
-                  .form-item-in
-                    h3.h2 Will you attend?
-                    .mb_10
-                      input.form-control(type="text", value="No. I give permission to enter (most common)")
-                    .mb_10
-                      textarea.form-control(cols="30", rows="5") Lockbox code # and any additional shoot instructions here.
-                  .form-item-in
-                    h3.h2 Login
-                    .d-sm-flex.gap-10
-                      .mb_15
-                        input.form-control(type="email", placeholder="Email")
-                      .mb_15
-                        input.form-control(type="password", placeholder="Password")
+                .d-sm-flex.mb_15
+                  .form-control-medium-2.mb_15.mb-sm_0
+                    input.form-control(type="date")
+                  .form-control-medium.mb_15.mb-sm_0.ms-sm_9
+                    input.form-control(type="time")
+                  .mb-sm_0.ms-sm_9.w-100
+                    input.form-control(type="text", value="Photos ready next day ($0)")
+                .mb_5 Alternate Date/Time
+                .d-sm-flex.mb_15
+                  .form-control-medium-2.mb_15.mb-sm_0
+                    input.form-control(type="date")
+                  .form-control-medium.mb_15.mb-sm_0.ms-sm_9
+                    input.form-control(type="time")
+                  .mb-sm_0.ms-sm_9.w-100
+                    input.form-control(type="text", value="Photos ready next day ($0)")
+                .form-item-in
+                  h3.h2 Will you attend?
+                  .mb_10
+                    input.form-control(type="text", value="No. I give permission to enter (most common)")
+                  .mb_10
+                    textarea.form-control(cols="30", rows="5") Lockbox code # and any additional shoot instructions here.
+                .form-item-in
+                  h3.h2 Login
+                  .d-sm-flex.gap-10
+                    .mb_15
+                      input.form-control(type="email", placeholder="Email")
+                    .mb_15
+                      input.form-control(type="password", placeholder="Password")
                 
               .mt_35#nextBtnArea
                 button#nextBtn.btn.btn-primary(disabled="disabled") Next

@@ -86,7 +86,12 @@
   .ms-sm_9{
     margin-left: 9px !important;
   } 
+}
 
+@media(min-width: 768px){
+  .pe-md_0{
+    padding-right: 0 !important;
+  }
 }
 
 @media(min-width: 992px){

@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vicaso</title>
-    <link rel="stylesheet" href="./css/main.css?v=20230805-5">
+    <link rel="stylesheet" href="./css/main.css?v=20230806">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&amp;display=swap" rel="stylesheet">
@@ -32,94 +32,92 @@
                 <h1 class="mb-xl_0">Listing address</h1>
                 <div class="d-flex align-items-center">Subtotal<span class="text-black fs-25 ms_5">$399</span></div>
               </div>
-              <div class="form-item">
-                <div class="row">
-                  <div class="col-lg-6 mb_15 pe-lg_0 form-item form-item-shown">
-                    <input class="form-control" type="text" placeholder="Street#">
+              <div class="row form-item">
+                <div class="col-md-4 mb_15 pe-md_0 form-item form-item-shown">
+                  <input class="form-control" type="text" placeholder="Street#">
+                </div>
+                <div class="col-md-5 mb_15 pe-md_0 form-item form-item-shown">
+                  <input class="form-control" type="text" placeholder="Street name">
+                </div>
+                <div class="col-md-3 mb_15 pe-md_0 form-item form-item-shown">
+                  <input class="form-control" type="text" placeholder="Unit/apt #">
+                </div>
+              </div>
+              <div class="row form-item">
+                <div class="col-md-3 pe-md_0 mb_15 form-item form-item-shown">
+                  <input class="form-control" type="text" placeholder="City">
+                </div>
+                <div class="col-md-3 pe-md_0 mb_15 form-item form-item-shown">
+                  <input class="form-control" type="text" placeholder="State">
+                </div>
+                <div class="col-md-3 pe-md_0 mb_15 form-item form-item-shown">
+                  <input class="form-control" type="text" placeholder="Zip">
+                </div>
+                <div class="col-md-3 pe-md_0 mb_15 form-item form-item-shown">
+                  <input class="form-control" type="text" placeholder="Country">
+                </div>
+              </div>
+              <div class="form-item form-item-in height-0">
+                <h3 class="h2">Property type</h3>
+                <select class="form-control mb_15 mb-sm_0"> 
+                  <option value="0" selected="selected">Select property type</option>
+                  <option value="1">Single Family Home</option>
+                  <option value="3">Condo / Apt / Townhome</option>
+                  <option value="7">Boat / Yacht</option>
+                  <option value="19">Auto / Motorhome</option>
+                </select>
+              </div>
+              <div class="form-item form-item-in height-0">
+                <h3 class="h2">Size</h3>
+                <input class="form-control mb_15 mb-sm_0" type="text" placeholder="3 bedrooms ($199 + photos)">
+              </div>
+              <div class="form-item form-item-in height-0">
+                <h3 class="h2">Use license</h3>
+                <input class="form-control mb_15 mb-sm_0" type="text" placeholder="Single listing ($0)">
+              </div>
+              <div class="form-item form-item-in height-0" id="shootDateArea">
+                <h3 class="h2">Shoot Date</h3>
+                <div class="mb_30">We’ll book closest to this and confirm today.</div>
+                <div class="d-sm-flex mb_15">
+                  <div class="form-control-medium-2 mb_15 mb-sm_0">
+                    <input class="form-control" type="date">
                   </div>
-                  <div class="col-lg-6 mb_15 form-item form-item-shown">
-                    <input class="form-control" type="text">
+                  <div class="form-control-medium mb_15 mb-sm_0 ms-sm_9">
+                    <input class="form-control" type="time">
                   </div>
-                  <div class="col-lg-6 mb_15 pe-lg_0 form-item form-item-shown">
-                    <input class="form-control" type="text" placeholder="unit/apt #">
-                  </div>
-                  <div class="col-lg-6 mb_15 form-item form-item-shown">
-                    <input class="form-control" type="text">
+                  <div class="mb-sm_0 ms-sm_9 w-100">
+                    <input class="form-control" type="text" value="Photos ready next day ($0)">
                   </div>
                 </div>
-                <div class="row">
-                  <div class="col-lg-4 pe-lg_0 mb_15 form-item form-item-shown">
-                    <input class="form-control" type="text">
+                <div class="mb_5">Alternate Date/Time</div>
+                <div class="d-sm-flex mb_15">
+                  <div class="form-control-medium-2 mb_15 mb-sm_0">
+                    <input class="form-control" type="date">
                   </div>
-                  <div class="col-lg-4 pe-lg_0 mb_15 form-item form-item-shown">
-                    <input class="form-control" type="text" placeholder="Zip">
+                  <div class="form-control-medium mb_15 mb-sm_0 ms-sm_9">
+                    <input class="form-control" type="time">
                   </div>
-                  <div class="col-lg-4 mb_15 form-item form-item-shown">
-                    <input class="form-control" type="text">
+                  <div class="mb-sm_0 ms-sm_9 w-100">
+                    <input class="form-control" type="text" value="Photos ready next day ($0)">
                   </div>
                 </div>
-                <div class="form-item form-item-in height-0">
-                  <h3 class="h2">Property type</h3>
-                  <select class="form-control mb_15 mb-sm_0"> 
-                    <option value="0" selected="selected">Select property type</option>
-                    <option value="1">Single Family Home</option>
-                    <option value="3">Condo / Apt / Townhome</option>
-                    <option value="7">Boat / Yacht</option>
-                    <option value="19">Auto / Motorhome</option>
-                  </select>
-                </div>
-                <div class="form-item form-item-in height-0">
-                  <h3 class="h2">Size</h3>
-                  <input class="form-control mb_15 mb-sm_0" type="text" placeholder="3 bedrooms ($199 + photos)">
-                </div>
-                <div class="form-item form-item-in height-0">
-                  <h3 class="h2">Use license</h3>
-                  <input class="form-control mb_15 mb-sm_0" type="text" placeholder="Single listing ($0)">
-                </div>
-                <div class="form-item form-item-in height-0" id="shootDateArea">
-                  <h3 class="h2">Shoot Date</h3>
-                  <div class="mb_30">We’ll book closest to this and confirm today.</div>
-                  <div class="d-sm-flex mb_15">
-                    <div class="form-control-medium-2 mb_15 mb-sm_0">
-                      <input class="form-control" type="date">
-                    </div>
-                    <div class="form-control-medium mb_15 mb-sm_0 ms-sm_9">
-                      <input class="form-control" type="time">
-                    </div>
-                    <div class="mb-sm_0 ms-sm_9 w-100">
-                      <input class="form-control" type="text" value="Photos ready next day ($0)">
-                    </div>
+                <div class="form-item-in">
+                  <h3 class="h2">Will you attend?</h3>
+                  <div class="mb_10">
+                    <input class="form-control" type="text" value="No. I give permission to enter (most common)">
                   </div>
-                  <div class="mb_5">Alternate Date/Time</div>
-                  <div class="d-sm-flex mb_15">
-                    <div class="form-control-medium-2 mb_15 mb-sm_0">
-                      <input class="form-control" type="date">
-                    </div>
-                    <div class="form-control-medium mb_15 mb-sm_0 ms-sm_9">
-                      <input class="form-control" type="time">
-                    </div>
-                    <div class="mb-sm_0 ms-sm_9 w-100">
-                      <input class="form-control" type="text" value="Photos ready next day ($0)">
-                    </div>
+                  <div class="mb_10">
+                    <textarea class="form-control" cols="30" rows="5">Lockbox code # and any additional shoot instructions here.</textarea>
                   </div>
-                  <div class="form-item-in">
-                    <h3 class="h2">Will you attend?</h3>
-                    <div class="mb_10">
-                      <input class="form-control" type="text" value="No. I give permission to enter (most common)">
+                </div>
+                <div class="form-item-in">
+                  <h3 class="h2">Login</h3>
+                  <div class="d-sm-flex gap-10">
+                    <div class="mb_15">
+                      <input class="form-control" type="email" placeholder="Email">
                     </div>
-                    <div class="mb_10">
-                      <textarea class="form-control" cols="30" rows="5">Lockbox code # and any additional shoot instructions here.</textarea>
-                    </div>
-                  </div>
-                  <div class="form-item-in">
-                    <h3 class="h2">Login</h3>
-                    <div class="d-sm-flex gap-10">
-                      <div class="mb_15">
-                        <input class="form-control" type="email" placeholder="Email">
-                      </div>
-                      <div class="mb_15">
-                        <input class="form-control" type="password" placeholder="Password">
-                      </div>
+                    <div class="mb_15">
+                      <input class="form-control" type="password" placeholder="Password">
                     </div>
                   </div>
                 </div>
