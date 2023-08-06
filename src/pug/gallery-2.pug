@@ -13,29 +13,38 @@ html(lang='en')
       .container
         .gallery
           .row.gap-10.mx_0
-            .col-md-6.col-lg-4.gallery-item.gallery-edit-1
+            .gallery-item.gallery-edit-1
               .gallery-text-2
-                .my_10 Some text with Button
+                .mb_15.text-gallery.d-flex.align-items-center
+                  i.icon-tick.me_5
+                  | Photos Ready
                 div
-                  button.btn.btn-secondary.btn-medium-2 OK
-            .col-md-6.col-lg-4.gallery-item.gallery-edit-2
+                  button.btn.btn-primary.btn-medium-2 Checkout
+              .gallery-text 17841 Woodside Avenue
+            .gallery-item.gallery-edit-2
               .gallery-text-2
-                .my_10 Some text with Button
-                div
-                  button.btn.btn-secondary.btn-medium-2 OK
-            .col-md-6.col-lg-4.gallery-item.gallery-edit-3
+                .mb_15.text-gallery.d-flex.align-items-center 
+                  i.icon-paint.me_5
+                  | Ready 11am Aug. 2nd
+              .gallery-text 17841 Woodside Avenue
+            .gallery-item.gallery-edit-3
               .gallery-text-2
-                .my_10 Some text with Button
+                .mb_15.text-gallery.d-flex.align-items-center 
+                  i.icon-photo.me_5
+                  | Shoot 3:30pm Aug. 1st
                 div
-                  button.btn.btn-secondary.btn-medium-2 OK
-            .col-md-6.col-lg-4.gallery-item.gallery-edit-4
+                  button.btn.btn-primary.btn-medium-2 Edit
+              .gallery-text 17841 Woodside Avenue
+            .gallery-item.gallery-edit-4
               .gallery-text-2
-                .my_10 Some text with Button
+                .mb_15.text-gallery Shoot is being scheduled
                 div
-                  button.btn.btn-secondary.btn-medium-2 OK
-            .col-md-6.col-lg-4.gallery-item.gallery-item-sold(style="background-image: url('./images/content/gallery-5.jpg')")
+                  button.btn.btn-primary.btn-medium-2 Edit
+              .gallery-text 17841 Woodside Avenue
+            .gallery-item.gallery-item-sold(style="background-image: url('./images/content/gallery-5.jpg')")
               .gallery-item-sold-text SOLD
-            .col-md-6.col-lg-4.gallery-item(style="background-image: url('./images/content/gallery-6.jpg')")
+              .gallery-text 17841 Woodside Avenue
+            .gallery-item(style="background-image: url('./images/content/gallery-6.jpg')")
               .gallery-text 17841 Woodside Avenue
 
     include ./layouts/footer-3

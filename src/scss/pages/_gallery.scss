@@ -8,7 +8,6 @@
   padding: 0;
 
   &:hover, &:active{
-
     .gallery-text, .gallery-text-2{
       opacity: 1;
     }
@@ -18,7 +17,6 @@
 .gallery-text, .gallery-text-2{
   color: white;
   font-weight: 600;
-  background-color: rgba(28, 28, 28, 0.6);
   font-size: remCalc(25);
   padding: 16px 25px;
   position: absolute;
@@ -28,6 +26,10 @@
   opacity: 0;
   transition: opacity .5s ease;
   border-radius: 0 0 15px 15px;
+}
+
+.gallery-text{
+  background-color: rgba(28, 28, 28, 0.6);
 }
 
 .gallery-text-2{
@@ -88,13 +90,25 @@
   background-size: 95px auto;
 }
 
+@media(max-width: 1199px){
+  [class*="gallery-edit"]{
+    background-image: none;
+  }
+
+  .gallery-item{
+    .gallery-text, .gallery-text-2{
+      opacity: 1;
+    }
+  }
+}
+
 @media(min-width: 768px){
   .gallery-item{
     width: calc(50% - 7px) !important;
   }
 }
 
-@media(min-width: 992px){
+@media(min-width: 1200px){
   .gallery-item{
     width: calc(33.33333333% - 7px) !important;
   }

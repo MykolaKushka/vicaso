@@ -35,3 +35,10 @@ $font-sizes: (
 .text-black{
   color: black
 }
+
+.text-gallery{
+  font-size: remCalc(25);
+  color: $grey-bg-3-hover;
+  font-weight: 600;
+  letter-spacing: -1px; 
+}
