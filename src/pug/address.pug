@@ -87,31 +87,31 @@ html(lang='en')
                     .mb_15
                       input.form-control(type="password", placeholder="Password")
 
-                #billingInfo.form-item-in.d-none
-                  h3.h2 Billing info
+              #billingInfo.d-none.form-item-in.mt_20
+                h3.h2 Billing info
+                .mb_15
+                  input.form-control(type="text", placeholder="Billing name (First, Last)")
+                .d-sm-flex.gap-10
                   .mb_15
-                    input.form-control(type="text", placeholder="Billing name (First, Last)")
-                  .d-sm-flex.gap-10
-                    .mb_15
-                      input.form-control(type="text", placeholder="Street #")
-                    .mb_15
-                      input.form-control(type="text", placeholder="Street name")
-                  .d-sm-flex.gap-10
-                    .mb_15
-                      input.form-control(type="text", placeholder="City")
-                    .mb_15
-                      input.form-control(type="text", placeholder="State")
-                  .d-sm-flex.gap-10
-                    .mb_15
-                      input.form-control(type="text", placeholder="Zip")
-                    .mb_15
-                      input.form-control(type="text", placeholder="Country")
+                    input.form-control(type="text", placeholder="Street #")
                   .mb_15
-                    input.form-control(type="text", placeholder="Coupon code")
-                  .mb_15.form-check
-                    input#billingCheckbox.form-check-input(type="checkbox")
-                    label.form-check-label(for="billingCheckbox")
-                      a(href="#") I agree to Vicaso's User Agreement & Privacy Policy
+                    input.form-control(type="text", placeholder="Street name")
+                .d-sm-flex.gap-10
+                  .mb_15
+                    input.form-control(type="text", placeholder="City")
+                  .mb_15
+                    input.form-control(type="text", placeholder="State")
+                .d-sm-flex.gap-10
+                  .mb_15
+                    input.form-control(type="text", placeholder="Zip")
+                  .mb_15
+                    input.form-control(type="text", placeholder="Country")
+                .mb_15
+                  input.form-control(type="text", placeholder="Coupon code")
+                .mb_15.form-check
+                  input#billingCheckbox.form-check-input(type="checkbox")
+                  label.form-check-label(for="billingCheckbox")
+                    a(href="#") I agree to Vicaso's User Agreement & Privacy Policy
                 
               .mt_35#nextBtnArea
                 button#nextBtn.btn.btn-primary(disabled="disabled") Next
