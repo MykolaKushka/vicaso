@@ -86,13 +86,43 @@ html(lang='en')
                       input.form-control(type="email", placeholder="Email")
                     .mb_15
                       input.form-control(type="password", placeholder="Password")
+
+                #billingInfo.form-item-in.d-none
+                  h3.h2 Billing info
+                  .mb_15
+                    input.form-control(type="text", placeholder="Billing name (First, Last)")
+                  .d-sm-flex.gap-10
+                    .mb_15
+                      input.form-control(type="text", placeholder="Street #")
+                    .mb_15
+                      input.form-control(type="text", placeholder="Street name")
+                  .d-sm-flex.gap-10
+                    .mb_15
+                      input.form-control(type="text", placeholder="City")
+                    .mb_15
+                      input.form-control(type="text", placeholder="State")
+                  .d-sm-flex.gap-10
+                    .mb_15
+                      input.form-control(type="text", placeholder="Zip")
+                    .mb_15
+                      input.form-control(type="text", placeholder="Country")
+                  .mb_15
+                    input.form-control(type="text", placeholder="Coupon code")
+                  .mb_15.form-check
+                    input#billingCheckbox.form-check-input(type="checkbox")
+                    label.form-check-label(for="billingCheckbox")
+                      a(href="#") I agree to Vicaso's User Agreement & Privacy Policy
                 
               .mt_35#nextBtnArea
                 button#nextBtn.btn.btn-primary(disabled="disabled") Next
 
               .mt_20.text-center.text-sm-start.d-none#loginBtnArea
-                button.btn.btn-primary.btn-medium-2 Sign In
-                button.btn.btn-secondary.btn-medium-2.ms_10 New User?
+                button.btn.btn-primary.btn-medium-2#loginBtn Sign In
+                button.btn.btn-primary.btn-medium-2.ms_10 New User?
+
+              .mt_20.d-none
+                button.btn.btn-primary.btn-medium-2 Apply Now!
+                button.btn.btn-primary.btn-medium-2.ms_10 Submit Order
 
     include ./layouts/footer
     script(src="./js/main.js?v=20230805-2", type="module")

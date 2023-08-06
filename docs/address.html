@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vicaso</title>
-    <link rel="stylesheet" href="./css/main.css?v=20230806-2">
+    <link rel="stylesheet" href="./css/main.css?v=20230806-3">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&amp;display=swap" rel="stylesheet">
@@ -121,13 +121,54 @@
                     </div>
                   </div>
                 </div>
+                <div class="form-item-in d-none" id="billingInfo">
+                  <h3 class="h2">Billing info</h3>
+                  <div class="mb_15">
+                    <input class="form-control" type="text" placeholder="Billing name (First, Last)">
+                  </div>
+                  <div class="d-sm-flex gap-10">
+                    <div class="mb_15">
+                      <input class="form-control" type="text" placeholder="Street #">
+                    </div>
+                    <div class="mb_15">
+                      <input class="form-control" type="text" placeholder="Street name">
+                    </div>
+                  </div>
+                  <div class="d-sm-flex gap-10">
+                    <div class="mb_15">
+                      <input class="form-control" type="text" placeholder="City">
+                    </div>
+                    <div class="mb_15">
+                      <input class="form-control" type="text" placeholder="State">
+                    </div>
+                  </div>
+                  <div class="d-sm-flex gap-10">
+                    <div class="mb_15">
+                      <input class="form-control" type="text" placeholder="Zip">
+                    </div>
+                    <div class="mb_15">
+                      <input class="form-control" type="text" placeholder="Country">
+                    </div>
+                  </div>
+                  <div class="mb_15">
+                    <input class="form-control" type="text" placeholder="Coupon code">
+                  </div>
+                  <div class="mb_15 form-check">
+                    <input class="form-check-input" id="billingCheckbox" type="checkbox">
+                    <label class="form-check-label" for="billingCheckbox"><a href="#">I agree to Vicaso's User Agreement & Privacy Policy</a></label>
+                  </div>
+                </div>
               </div>
               <div class="mt_35" id="nextBtnArea">
                 <button class="btn btn-primary" id="nextBtn" disabled="disabled">Next</button>
               </div>
               <div class="mt_20 text-center text-sm-start d-none" id="loginBtnArea">
-                <button class="btn btn-primary btn-medium-2">Sign In</button>
-                <button class="btn btn-secondary btn-medium-2 ms_10">New User?</button>
+                <button class="btn btn-primary btn-medium-2" id="loginBtn">Sign In</button>
+                <button class="btn btn-primary btn-medium-2 ms_10">New User?</button>
+              </div>
+              <div class="mt_20 d-none">
+                <button class="btn btn-primary btn-medium-2">Apply Now!</button>
+                <button class="btn btn-primary btn-medium-2 ms_10">Submit Order</button>
               </div>
             </div>
           </div>
