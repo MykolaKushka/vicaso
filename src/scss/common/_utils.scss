@@ -111,6 +111,11 @@ label{
   }
 }
 
+.col-auto {
+  flex: 0 0 auto;
+  width: auto;
+}
+
 .justify-content{
   &-between{
     justify-content: space-between;
@@ -162,8 +167,16 @@ label{
     display: flex !important;
   }
 
+  .justify-content-sm-end{
+    justify-content: flex-end !important;
+  }
+
   .text-sm-start{
     text-align: left !important;
+  }
+
+  .text-sm-end{
+    text-align: right !important;
   }
 }
 
