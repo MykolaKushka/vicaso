@@ -153,9 +153,23 @@ label{
 }
 
 @media(min-width: 575px){
+  .col-sm {
+    flex: 1 0 0%;
+  }
+
   .col-sm-auto {
     flex: 0 0 auto;
     width: auto;
+  }
+
+  .col-sm-3 {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+
+  .col-sm-4 {
+    flex: 0 0 auto;
+    width: 33.33333333%;
   }
 
   .col-sm-6{
