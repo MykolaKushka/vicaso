@@ -39,11 +39,12 @@
 .header-main-logo{
   a{
     display: inline-block;
-    margin: 0;
-    width: 110px;
-    height: 33px;
-    background-image: url('../images/common/vicaso_logo_white.png');
-    background-size: cover;
+    margin-left: 15px;
+
+    img{
+      width: 110px;
+      height: 33px;
+    }
   }
 }
 

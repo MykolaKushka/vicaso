@@ -47,6 +47,7 @@ const nextBtn = () => {
       if (formItemsHidden.length > 0) {
         formItemsHidden[0].classList.remove('height-0');
         formItemsHidden[0].classList.add('form-item-shown');
+        formItemsHidden[0].scrollIntoView({ behavior: 'smooth' });
         if (formItemsHidden[0].id === 'shootDateArea') {
           document.getElementById('nextBtnArea').classList.add('d-none');
           document.getElementById('loginBtnArea').classList.remove('d-none');
